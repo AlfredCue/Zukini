@@ -10,6 +10,10 @@
 *.userosscache
 *.sln.docstates
 
+data/QtFiles/Qt_1/*.txt
+data/QtFiles/Qt_2/*.txt
+data/temp/qt_backup/*.txt
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
