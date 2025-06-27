@@ -13,6 +13,13 @@
 data/QtFiles/Qt_1/*.txt
 data/QtFiles/Qt_2/*.txt
 data/temp/qt_backup/*.txt
+resources/ZDPlaskin/qt_conditions.txt
+resources/ZDPlaskin/qt_conditions_list.txt
+resources/ZDPlaskin/qt_densities.txt
+resources/ZDPlaskin/qt_matrix.txt
+resources/ZDPlaskin/qt_rates.txt
+resources/ZDPlaskin/qt_reactions_list.txt
+resources/ZDPlaskin/qt_species_list.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
