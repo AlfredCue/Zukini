@@ -84,13 +84,16 @@ to be a value recieved by an external .dat file, like the case of the power inpu
 temperature to further improve the simulation.
 
 As it is now (Version 1.0) the core files for a ZDPlasKin run are:
+```
 ├──> data_in.dat           #Has the values for time, voltage and current
 ├──> dbd0D.F90             #Is the master code for running ZDPlasKin
 ├──> kinet.inp             #The file that contains the kinetic mechanism of the simulation
+```
 
 For the outputs, in the master code we are calling a subroutine of ZDPlasKin that generates a series of files
 with the suffix "qt" that encapsulate all the information of the simulation.
 
+```
 ├──> qt_conditions_list.txt           #Names of the conditions considered in the simulation
 ├──> qt_conditions.txt                #Values per time-step of the conditions of the simulation
 ├──> qt_densities.txt                 #Values per time-step of the density of each specie given in cm^-3
@@ -98,6 +101,7 @@ with the suffix "qt" that encapsulate all the information of the simulation.
 ├──> qt_rates.txt                     #Values for the reaction rate of each chemical reaction each time-step
 ├──> qt_reactions_list.txt            #List of all reactions considered/simulated
 ├──> qt_species_list.txt              #List of all species considered/simulated
+```
 
 ---
 
