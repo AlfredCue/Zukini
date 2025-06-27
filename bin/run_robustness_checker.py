@@ -130,16 +130,18 @@ def run_parametric_study():
                     result_path = output_base / label
 
                     score = analyzer.analyze(
-                        qt1_dir=QT1_DIR,
-                        qt2_dir=QT2_DIR,
+                        qt1_dir= QT1_DIR,
+                        qt2_dir= QT2_DIR,
                         priority_species=["NO", "NO2"],
                         sim_time_full=sim_time_full,
                         sim_time_reduced=sim_time_reduced
                     )
+                    
 
                     # Save results
                     if (img_dir := PROJECT_ROOT / "images").exists():
                         shutil.copytree(img_dir, result_path, dirs_exist_ok=True)
+                        shutil.move(RESULTS_DIR / "metrics_summary.txt", RESULTS_DIR / config_name / label)
                     LOGGER.info("Trust score for %s: %.2f", label, score)
 
         except Exception as e:
