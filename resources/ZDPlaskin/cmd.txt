@@ -1,0 +1,2 @@
+ifort /O3 /arch:CORE_AVX2 /Qfma dvode_f90_m.f90 zdplaskin_m.F90 dbd0D.F90 bolsig_x86_64.lib
+

@@ -1,0 +1,540 @@
+  1 bolsig:N2->N2(V1RES)                        
+  2 bolsig:N2->N2(V1)                           
+  3 bolsig:N2->N2(V2)                           
+  4 bolsig:N2->N2(V3)                           
+  5 bolsig:N2->N2(V4)                           
+  6 bolsig:N2->N2(V5)                           
+  7 bolsig:N2->N2(V6)                           
+  8 bolsig:N2->N2(V7)                           
+  9 bolsig:N2->N2(V8)                           
+ 10 bolsig:N2(V1)->N2                           
+ 11 bolsig:N2(V2)->N2                           
+ 12 bolsig:N2(V3)->N2                           
+ 13 bolsig:N2(V4)->N2                           
+ 14 bolsig:N2(V5)->N2                           
+ 15 bolsig:N2(V6)->N2                           
+ 16 bolsig:N2(V7)->N2                           
+ 17 bolsig:N2(V8)->N2                           
+ 18 bolsig:O2->O2(V1RES)                        
+ 19 bolsig:O2->O2(V1)                           
+ 20 bolsig:O2->O2(V2RES)                        
+ 21 bolsig:O2->O2(V2)                           
+ 22 bolsig:O2->O2(V3)                           
+ 23 bolsig:O2->O2(V4)                           
+ 24 bolsig:O2(V1)->O2                           
+ 25 bolsig:O2(V2)->O2                           
+ 26 bolsig:O2(V3)->O2                           
+ 27 bolsig:O2(V4)->O2                           
+ 28 N2(V1)+N2=>N2+N2                            
+ 29 N2(V2)+N2=>N2(V1)+N2                        
+ 30 N2(V3)+N2=>N2(V2)+N2                        
+ 31 N2(V4)+N2=>N2(V3)+N2                        
+ 32 N2(V5)+N2=>N2(V4)+N2                        
+ 33 N2(V6)+N2=>N2(V5)+N2                        
+ 34 N2(V7)+N2=>N2(V6)+N2                        
+ 35 N2(V8)+N2=>N2(V7)+N2                        
+ 36 N2+N2=>N2(V1)+N2                            
+ 37 N2(V1)+N2=>N2(V2)+N2                        
+ 38 N2(V2)+N2=>N2(V3)+N2                        
+ 39 N2(V3)+N2=>N2(V4)+N2                        
+ 40 N2(V4)+N2=>N2(V5)+N2                        
+ 41 N2(V5)+N2=>N2(V6)+N2                        
+ 42 N2(V6)+N2=>N2(V7)+N2                        
+ 43 N2(V7)+N2=>N2(V8)+N2                        
+ 44 N2(V1)+N=>N2+N                              
+ 45 N2(V2)+N=>N2(V1)+N                          
+ 46 N2(V3)+N=>N2(V2)+N                          
+ 47 N2(V4)+N=>N2(V3)+N                          
+ 48 N2(V5)+N=>N2(V4)+N                          
+ 49 N2(V6)+N=>N2(V5)+N                          
+ 50 N2(V7)+N=>N2(V6)+N                          
+ 51 N2(V8)+N=>N2(V7)+N                          
+ 52 N2+N=>N2(V1)+N                              
+ 53 N2(V1)+N=>N2(V2)+N                          
+ 54 N2(V2)+N=>N2(V3)+N                          
+ 55 N2(V3)+N=>N2(V4)+N                          
+ 56 N2(V4)+N=>N2(V5)+N                          
+ 57 N2(V5)+N=>N2(V6)+N                          
+ 58 N2(V6)+N=>N2(V7)+N                          
+ 59 N2(V7)+N=>N2(V8)+N                          
+ 60 N2(V1)+O=>N2+O                              
+ 61 N2(V2)+O=>N2(V1)+O                          
+ 62 N2(V3)+O=>N2(V2)+O                          
+ 63 N2(V4)+O=>N2(V3)+O                          
+ 64 N2(V5)+O=>N2(V4)+O                          
+ 65 N2(V6)+O=>N2(V5)+O                          
+ 66 N2(V7)+O=>N2(V6)+O                          
+ 67 N2(V8)+O=>N2(V7)+O                          
+ 68 N2+O=>N2(V1)+O                              
+ 69 N2(V1)+O=>N2(V2)+O                          
+ 70 N2(V2)+O=>N2(V3)+O                          
+ 71 N2(V3)+O=>N2(V4)+O                          
+ 72 N2(V4)+O=>N2(V5)+O                          
+ 73 N2(V5)+O=>N2(V6)+O                          
+ 74 N2(V6)+O=>N2(V7)+O                          
+ 75 N2(V7)+O=>N2(V8)+O                          
+ 76 O2(V1)+O2=>O2+O2                            
+ 77 O2(V2)+O2=>O2(V1)+O2                        
+ 78 O2(V3)+O2=>O2(V2)+O2                        
+ 79 O2(V4)+O2=>O2(V3)+O2                        
+ 80 O2+O2=>O2(V1)+O2                            
+ 81 O2(V1)+O2=>O2(V2)+O2                        
+ 82 O2(V2)+O2=>O2(V3)+O2                        
+ 83 O2(V3)+O2=>O2(V4)+O2                        
+ 84 O2(V1)+O=>O2+O                              
+ 85 O2(V2)+O=>O2(V1)+O                          
+ 86 O2(V3)+O=>O2(V2)+O                          
+ 87 O2(V4)+O=>O2(V3)+O                          
+ 88 O2+O=>O2(V1)+O                              
+ 89 O2(V1)+O=>O2(V2)+O                          
+ 90 O2(V2)+O=>O2(V3)+O                          
+ 91 O2(V3)+O=>O2(V4)+O                          
+ 92 bolsig:N2->N2(A3)                           
+ 93 bolsig:N2->N2(A3,V5-9)                      
+ 94 bolsig:N2->N2(A3,V10-)                      
+ 95 bolsig:N2->N2(B3)                           
+ 96 bolsig:N2->N2(W3)                           
+ 97 bolsig:N2->N2(B'3)                          
+ 98 bolsig:N2->N2(A'1)                          
+ 99 bolsig:N2->N2(A1)                           
+100 bolsig:N2->N2(W1)                           
+101 bolsig:N2->N2(C3)                           
+102 bolsig:N2->N2(E3)                           
+103 bolsig:N2->N2(A''1)                         
+104 bolsig:N2->N2(SUM)                          
+105 bolsig:O2->O2(A1)                           
+106 bolsig:O2->O2(B1)                           
+107 bolsig:O2->O2(4.5EV)                        
+108 bolsig:O2->O2(6.0EV)                        
+109 bolsig:O2->O2(8.4EV)                        
+110 bolsig:O2->O2(9.97EV)                       
+111 bolsig:O->O(1D)                             
+112 bolsig:O->O(1S)                             
+113 bolsig:N2(A3)->N2                           
+114 bolsig:O2(A1)->O2                           
+115 bolsig:O->O^+                               
+116 bolsig:N2->N2^+                             
+117 bolsig:N2(A3)->N2^+                         
+118 bolsig:O2->O2^+                             
+119 bolsig:O2(A1)->O2^+                         
+120 bolsig:NO->NO^+                             
+121 bolsig:N2O->N2O^+                           
+122 E+N2^+=>N+N                                 
+123 E+N2^+=>N+N(2D)                             
+124 E+O2^+=>O+O                                 
+125 E+O2^+=>O+O(1D)                             
+126 E+O2^+=>O+O(1S)                             
+127 E+NO^+=>O+N                                 
+128 E+NO^+=>O+N(2D)                             
+129 E+N4^+=>N2+N2                               
+130 E+NO2^+=>NO+O                               
+131 E+O4^+=>O2+O2                               
+132 E+O2^+N2=>O2+N2                             
+133 E+NO2=>O^-+NO                               
+134 E+O+O2=>O^-+O2                              
+135 E+O+O2=>O2^-+O                              
+136 E+O3+ANY_NEUTRAL=>O3^-+ANY_NEUTRAL          
+137 E+NO+ANY_NEUTRAL=>NO^-+ANY_NEUTRAL          
+138 E+N2O+ANY_NEUTRAL=>N2O^-+ANY_NEUTRAL        
+139 E+O2+N2=>O2^-+N2                            
+140 O^-+O=>O2+E                                 
+141 O^-+N=>NO+E                                 
+142 O^-+NO=>NO2+E                               
+143 O^-+N2=>N2O+E                               
+144 O^-+O2=>O3+E                                
+145 O^-+O2(A1)=>O3+E                            
+146 O^-+O2(B1)=>O+O2+E                          
+147 O^-+N2(A3)=>O+N2+E                          
+148 O^-+N2(B3)=>O+N2+E                          
+149 O^-+O3=>O2+O2+E                             
+150 O2^-+O=>O3+E                                
+151 O2^-+N=>NO2+E                               
+152 O2^-+O2=>O2+O2+E                            
+153 O2^-+O2(A1)=>O2+O2+E                        
+154 O2^-+O2(B1)=>O2+O2+E                        
+155 O2^-+N2=>O2+N2+E                            
+156 O2^-+N2(A3)=>O2+N2+E                        
+157 O2^-+N2(B3)=>O2+N2+E                        
+158 O3^-+O=>O2+O2+E                             
+159 NO^-+N=>N2O+E                               
+160 O3^-+N=>NO+O2+E                             
+161 N2O^-+N=>NO+N2+E                            
+162 NO2^-+N=>NO+NO+E                            
+163 NO3^-+N=>NO+NO2+E                           
+164 NO^-+O=>NO2+E                               
+165 N2O^-+O=>NO+NO+E                            
+166 NO2^-+O=>NO+O2+E                            
+167 NO3^-+O=>NO+O3+E                            
+168 O3^-+N2(A3)=>O3+N2+E                        
+169 NO^-+N2(A3)=>NO+N2+E                        
+170 N2O^-+N2(A3)=>N2O+N2+E                      
+171 NO2^-+N2(A3)=>NO2+N2+E                      
+172 NO3^-+N2(A3)=>NO3+N2+E                      
+173 O3^-+N2(B3)=>O3+N2+E                        
+174 NO^-+N2(B3)=>NO+N2+E                        
+175 N2O^-+N2(B3)=>N2O+N2+E                      
+176 NO2^-+N2(B3)=>NO2+N2+E                      
+177 NO3^-+N2(B3)=>NO3+N2+E                      
+178 N2(A3)=>N2                                  
+179 N2(B3)=>N2(A3)                              
+180 N2(A`1)=>N2                                 
+181 N2(C3)=>N2(B3)                              
+182 O2(A1)=>O2                                  
+183 O2(B1)=>O2(A1)                              
+184 O2(B1)=>O2                                  
+185 O2(4.5EV)=>O2                               
+186 N2(A3)+O=>NO+N(2D)                          
+187 N2(A3)+O=>N2+O(1S)                          
+188 N2(A3)+N=>N2+N                              
+189 N2(A3)+N=>N2+N(2P)                          
+190 N2(A3)+O2=>N2+O+O(1D)                       
+191 N2(A3)+O2=>N2+O2(A1)                        
+192 N2(A3)+O2=>N2+O2(B1)                        
+193 N2(A3)+O2=>N2O+O                            
+194 N2(A3)+N2=>N2+N2                            
+195 N2(A3)+NO=>N2+NO                            
+196 N2(A3)+N2O=>N2+N+NO                         
+197 N2(A3)+NO2=>N2+O+NO                         
+198 N2(A3)+N2(A3)=>N2+N2(B3)                    
+199 N2(A3)+N2(A3)=>N2+N2(C3)                    
+200 N2(B3)+N2=>N2(A3)+N2                        
+201 N2(B3)+N2=>N2+N2                            
+202 N2(B3)+O2=>N2+O+O                           
+203 N2(B3)+NO=>N2(A3)+NO                        
+204 N2(C3)+N2=>N2(A`1)+N2                       
+205 N2(C3)+O2=>N2+O+O(1S)                       
+206 N2(A`1)+N2=>N2(B3)+N2                       
+207 N2(A`1)+O2=>N2+O+O                          
+208 N2(A`1)+NO=>N2+N+O                          
+209 N2(A`1)+N2(A3)=>N4^++E                      
+210 N2(A`1)+N2(A`1)=>N4^++E                     
+211 N+N+N2=>N2(A3)+N2                           
+212 N+N+O2=>N2(A3)+O2                           
+213 N+N+NO=>N2(A3)+NO                           
+214 N+N+N2=>N2(B3)+N2                           
+215 N+N+O2=>N2(B3)+O2                           
+216 N+N+NO=>N2(B3)+NO                           
+217 N(2D)+O=>N+O(1D)                            
+218 N(2D)+O2=>NO+O                              
+219 N(2D)+NO=>N2+O                              
+220 N(2D)+N2O=>NO+N2                            
+221 N(2D)+N2=>N+N2                              
+222 N(2P)+N2=>N+N2                              
+223 N(2P)+O2=>NO+O                              
+224 N(2P)+NO=>N2(A3)+O                          
+225 O2(A1)+O=>O2+O                              
+226 O2(A1)+N=>NO+O                              
+227 O2(A1)+O2=>O2+O2                            
+228 O2(A1)+N2=>O2+N2                            
+229 O2(A1)+NO=>O2+NO                            
+230 O2(A1)+O3=>O2+O2+O(1D)                      
+231 O2(A1)+O2(A1)=>O2+O2(B1)                    
+232 O+O3=>O2+O2(A1)                             
+233 O2(B1)+O=>O2(A1)+O                          
+234 O2(B1)+O=>O2+O(1D)                          
+235 O2(B1)+O2=>O2(A1)+O2                        
+236 O2(B1)+N2=>O2(A1)+N2                        
+237 O2(B1)+NO=>O2(A1)+NO                        
+238 O2(B1)+O3=>O2+O2+O                          
+239 O2(4.5EV)+O=>O2+O(1S)                       
+240 O2(4.5EV)+O2=>O2(B1)+O2(B1)                 
+241 O2(4.5EV)+N2=>O2(B1)+N2                     
+242 O(1D)+O=>O+O                                
+243 O(1D)+O2=>O+O2                              
+244 O(1D)+O2=>O+O2(A1)                          
+245 O(1D)+O2=>O+O2(B1)                          
+246 O(1D)+N2=>O+N2                              
+247 O(1D)+O3=>O2+O+O                            
+248 O(1D)+O3=>O2+O2                             
+249 O(1D)+NO=>O2+N                              
+250 O(1D)+N2O=>NO+NO                            
+251 O(1D)+N2O=>O2+N2                            
+252 O(1S)+O=>O(1D)+O                            
+253 O(1S)+N=>O+N                                
+254 O(1S)+O2=>O(1D)+O2                          
+255 O(1S)+O2=>O+O+O                             
+256 O(1S)+N2=>O+N2                              
+257 O(1S)+O2(A1)=>O+O2(4.5EV)                   
+258 O(1S)+O2(A1)=>O(1D)+O2(B1)                  
+259 O(1S)+O2(A1)=>O+O+O                         
+260 O(1S)+NO=>O+NO                              
+261 O(1S)+NO=>O(1D)+NO                          
+262 O(1S)+O3=>O2+O2                             
+263 O(1S)+O3=>O2+O+O(1D)                        
+264 O(1S)+N2O=>O+N2O                            
+265 O(1S)+N2O=>O(1D)+N2O                        
+266 N+NO=>O+N2                                  
+267 N+O2=>O+NO                                  
+268 N+NO2=>O+O+N2                               
+269 N+NO2=>O+N2O                                
+270 N+NO2=>N2+O2                                
+271 N+NO2=>NO+NO                                
+272 O+NO=>N+O2                                  
+273 O+NO=>NO2                                   
+274 O+N2O=>N2+O2                                
+275 O+N2O=>NO+NO                                
+276 O+NO2=>NO+O2                                
+277 O+NO3=>O2+NO2                               
+278 NO+O2=>O+NO2                                
+279 NO+O3=>O2+NO2                               
+280 NO+NO3=>NO2+NO2                             
+281 NO2+NO2=>NO+NO+O2                           
+282 NO2+NO2=>NO+NO3                             
+283 NO2+O3=>O2+NO3                              
+284 NO2+NO3=>NO+NO2+O2                          
+285 NO3+O2=>NO2+O3                              
+286 NO3+NO3=>O2+NO2+NO2                         
+287 O3+N2=>O2+O+N2                              
+288 O3+O2=>O2+O+O2                              
+289 O3+N=>O2+O+N                                
+290 O3+O=>O2+O+O                                
+291 NO3+N2=>NO2+O+N2                            
+292 NO3+N2=>NO+O2+N2                            
+293 N2O5+ANY_NEUTRAL=>NO2+NO3+ANY_NEUTRAL       
+294 N+N+N2=>N2+N2                               
+295 N+N+O2=>N2+O2                               
+296 N+N+NO=>N2+NO                               
+297 O+O+N2=>O2+N2                               
+298 O+O+O2=>O2+O2                               
+299 O+O+N=>O2+N                                 
+300 O+O+O=>O2+O                                 
+301 O+O+NO=>O2+NO                               
+302 N+O+N2=>NO+N2                               
+303 N+O+O2=>NO+O2                               
+304 N+O+N=>NO+N                                 
+305 N+O+O=>NO+O                                 
+306 N+O+NO=>NO+NO                               
+307 O+O2+N2=>O3+N2                              
+308 O+O2+O2=>O3+O2                              
+309 O+O2+NO=>O3+NO                              
+310 O+O2+N=>O3+N                                
+311 O+O2+O=>O3+O                                
+312 O+NO+N2=>NO2+N2                             
+313 O+NO+O2=>NO2+O2                             
+314 O+NO+NO=>NO2+NO                             
+315 O+NO2+N2=>NO3+N2                            
+316 O+NO2+O2=>NO3+O2                            
+317 O+NO2+N=>NO3+N                              
+318 O+NO2+O=>NO3+O                              
+319 O+NO2+NO=>NO3+NO                            
+320 NO2+NO3+ANY_NEUTRAL=>N2O5+ANY_NEUTRAL       
+321 N^++O2=>O2^++N                              
+322 N^++O2=>NO^++O                              
+323 N^++O2=>O^++NO                              
+324 N^++O3=>NO^++O2                             
+325 N^++NO=>NO^++N                              
+326 N^++NO=>N2^++O                              
+327 N^++NO=>O^++N2                              
+328 O^++N2=>NO^++N                              
+329 O^++O2=>O2^++O                              
+330 O^++O3=>O2^++O2                             
+331 O^++NO=>NO^++O                              
+332 O^++NO=>O2^++N                              
+333 O^++N2O=>NO^++NO                            
+334 O^++NO2=>NO2^++O                            
+335 N2^++O2=>O2^++N2                            
+336 N2^++O=>NO^++N                              
+337 N2^++O3=>O2^++O+N2                          
+338 N2^++NO=>NO^++N2                            
+339 N2^++N2O=>N2O^++N2                          
+340 N2^++N2O=>NO^++N+N2                         
+341 O2^++N2=>NO^++NO                            
+342 O2^++N=>NO^++O                              
+343 O2^++NO=>NO^++O2                            
+344 O2^++NO2=>NO^++O3                           
+345 O2^++NO2=>NO2^++O2                          
+346 N3^++O2=>O2^++N+N2                          
+347 N3^++O2=>NO2^++N2                           
+348 N3^++NO=>NO^++N+N2                          
+349 N3^++NO=>N2O^++N2                           
+350 NO2^++NO=>NO^++NO2                          
+351 N2O^++NO=>NO^++N2O                          
+352 N4^++N2=>N2^++N2+N2                         
+353 N4^++O2=>O2^++N2+N2                         
+354 N4^++O=>O^++N2+N2                           
+355 N4^++N=>N^++N2+N2                           
+356 N4^++NO=>NO^++N2+N2                         
+357 O4^++N2=>O2^+N2+O2                          
+358 O4^++O2=>O2^++O2+O2                         
+359 O4^++O2(A1)=>O2^++O2+O2                     
+360 O4^++O2(B1)=>O2^++O2+O2                     
+361 O4^++O=>O2^++O3                             
+362 O4^++NO=>NO^++O2+O2                         
+363 O2^+N2+N2=>O2^++N2+N2                       
+364 O2^+N2+O2=>O4^++N2                          
+365 N^++N2+N2=>N3^++N2                          
+366 O^++N2+ANY_NEUTRAL=>NO^++N+ANY_NEUTRAL      
+367 N2^++N2+N2=>N4^++N2                         
+368 O2^++O2+O2=>O4^++O2                         
+369 O2^++N2+N2=>O2^+N2+N2                       
+370 O^-+O2(A1)=>O2^-+O                          
+371 O^-+O3=>O3^-+O                              
+372 O^-+NO2=>NO2^-+O                            
+373 O^-+N2O=>NO^-+NO                            
+374 O^-+N2O=>N2O^-+O                            
+375 O2^-+O=>O^-+O2                              
+376 O2^-+O3=>O3^-+O2                            
+377 O2^-+NO2=>NO2^-+O2                          
+378 O2^-+NO3=>NO3^-+O2                          
+379 O3^-+O=>O2^-+O2                             
+380 O3^-+NO=>NO3^-+O                            
+381 O3^-+NO=>NO2^-+O2                           
+382 O3^-+NO2=>NO2^-+O3                          
+383 O3^-+NO2=>NO3^-+O2                          
+384 O3^-+NO3=>NO3^-+O3                          
+385 NO^-+O2=>O2^-+NO                            
+386 NO^-+NO2=>NO2^-+NO                          
+387 NO^-+N2O=>NO2^-+N2                          
+388 NO2^-+O3=>NO3^-+O2                          
+389 NO2^-+NO2=>NO3^-+NO                         
+390 NO2^-+NO3=>NO3^-+NO2                        
+391 NO2^-+N2O5=>NO3^-+NO2+NO2                   
+392 NO3^-+NO=>NO2^-+NO2                         
+393 O4^-+N2=>O2^-+O2+N2                         
+394 O4^-+O2=>O2^-+O2+O2                         
+395 O4^-+O=>O3^-+O2                             
+396 O4^-+O=>O^-+O2+O2                           
+397 O4^-+O2(A1)=>O2^-+O2+O2                     
+398 O4^-+O2(B1)=>O2^-+O2+O2                     
+399 O4^-+NO=>NO3^-+O2                           
+400 O^-+O2+ANY_NEUTRAL=>O3^-+ANY_NEUTRAL        
+401 O^-+NO+ANY_NEUTRAL=>NO2^-+ANY_NEUTRAL       
+402 O2^-+O2+ANY_NEUTRAL=>O4^-+ANY_NEUTRAL       
+403 O^-+O2^+=>O+O2                              
+404 O^-+NO^+=>O+NO                              
+405 O^-+NO2^+=>O+NO2                            
+406 O2^-+N^+=>O2+N                              
+407 O2^-+N2^+=>O2+N2                            
+408 O2^-+O^+=>O2+O                              
+409 O2^-+O2^+=>O2+O2                            
+410 O2^-+NO^+=>O2+NO                            
+411 O2^-+N2O^+=>O2+N2O                          
+412 O2^-+NO2^+=>O2+NO2                          
+413 O3^-+O2^+=>O3+O2                            
+414 O3^-+NO^+=>O3+NO                            
+415 O3^-+NO2^+=>O3+NO2                          
+416 NO^-+N^+=>NO+N                              
+417 NO^-+N2^+=>NO+N2                            
+418 NO^-+O^+=>NO+O                              
+419 NO^-+O2^+=>NO+O2                            
+420 NO^-+NO^+=>NO+NO                            
+421 NO^-+N2O^+=>NO+N2O                          
+422 NO^-+NO2^+=>NO+NO2                          
+423 N2O^-+O2^+=>N2O+O2                          
+424 N2O^-+NO^+=>N2O+NO                          
+425 N2O^-+NO2^+=>N2O+NO2                        
+426 NO2^-+N^+=>NO2+N                            
+427 NO2^-+N2^+=>NO2+N2                          
+428 NO2^-+O^+=>NO2+O                            
+429 NO2^-+O2^+=>NO2+O2                          
+430 NO2^-+NO^+=>NO2+NO                          
+431 NO2^-+N2O^+=>NO2+N2O                        
+432 NO2^-+NO2^+=>NO2+NO2                        
+433 NO3^-+N2^+=>NO3+N2                          
+434 NO3^-+O2^+=>NO3+O2                          
+435 NO3^-+NO^+=>NO3+NO                          
+436 NO3^-+N2O^+=>NO3+N2O                        
+437 NO3^-+NO2^+=>NO3+NO2                        
+438 O^-+N4^+=>O+N2+N2                           
+439 O^-+O2^+=>O+O+O                             
+440 O^-+O4^+=>O+O2+O2                           
+441 O^-+NO^+=>O+N+O                             
+442 O^-+NO2^+=>O+N+O2                           
+443 O^-+O2^+N2=>O+O2+N2                         
+444 O2^-+N2^+=>O2+N+N                           
+445 O2^-+N3^+=>O2+N+N2                          
+446 O2^-+N4^+=>O2+N2+N2                         
+447 O2^-+O2^+=>O2+O+O                           
+448 O2^-+O4^+=>O2+O2+O2                         
+449 O2^-+NO^+=>O2+N+O                           
+450 O2^-+N2O^+=>O2+N2+O                         
+451 O2^-+NO2^+=>O2+N+O2                         
+452 O2^-+O2^+N2=>O2+O2+N2                       
+453 O3^-+N4^+=>O3+N2+N2                         
+454 O3^-+O2^+=>O3+O+O                           
+455 O3^-+O4^+=>O3+O2+O2                         
+456 O3^-+NO^+=>O3+N+O                           
+457 O3^-+NO2^+=>O3+N+O2                         
+458 O3^-+O2^+N2=>O3+O2+N2                       
+459 NO^-+N2^+=>NO+N+N                           
+460 NO^-+N3^+=>NO+N+N2                          
+461 NO^-+N4^+=>NO+N2+N2                         
+462 NO^-+O2^+=>NO+O+O                           
+463 NO^-+O4^+=>NO+O2+O2                         
+464 NO^-+NO^+=>NO+N+O                           
+465 NO^-+N2O^+=>NO+N2+O                         
+466 NO^-+NO2^+=>NO+N+O2                         
+467 NO^-+O2^+N2=>NO+O2+N2                       
+468 N2O^-+O2^+=>N2O+O+O                         
+469 N2O^-+O4^+=>N2O+O2+O2                       
+470 N2O^-+NO^+=>N2O+N+O                         
+471 N2O^-+NO2^+=>N2O+N+O2                       
+472 N2O^-+O2^+N2=>N2O+O2+N2                     
+473 NO2^-+N2^+=>NO2+N+N                         
+474 NO2^-+N3^+=>NO2+N+N2                        
+475 NO2^-+N4^+=>NO2+N2+N2                       
+476 NO2^-+O2^+=>NO2+O+O                         
+477 NO2^-+O4^+=>NO2+O2+O2                       
+478 NO2^-+NO^+=>NO2+N+O                         
+479 NO2^-+N2O^+=>NO2+N2+O                       
+480 NO2^-+NO2^+=>NO2+N+O2                       
+481 NO2^-+O2^+N2=>NO2+O2+N2                     
+482 NO3^-+N2^+=>NO3+N+N                         
+483 NO3^-+N4^+=>NO3+N2+N2                       
+484 NO3^-+O2^+=>NO3+O+O                         
+485 NO3^-+O4^+=>NO3+O2+O2                       
+486 NO3^-+NO^+=>NO3+N+O                         
+487 NO3^-+N2O^+=>NO3+N2+O                       
+488 NO3^-+NO2^+=>NO3+N+O2                       
+489 NO3^-+O2^+N2=>NO3+O2+N2                     
+490 O4^-+N^+=>O2+O2+N                           
+491 O4^-+N2^+=>O2+O2+N2                         
+492 O4^-+O^+=>O2+O2+O                           
+493 O4^-+O2^+=>O2+O2+O2                         
+494 O4^-+NO^+=>O2+O2+NO                         
+495 O4^-+N2O^+=>O2+O2+N2O                       
+496 O4^-+NO2^+=>O2+O2+NO2                       
+497 O4^-+N3^+=>O2+O2+N2+N                       
+498 O4^-+N4^+=>O2+O2+N2+N2                      
+499 O4^-+O4^+=>O2+O2+O2+O2                      
+500 O4^-+O2^+N2=>O2+O2+O2+N2                    
+501 O^-+O2^++ANY_NEUTRAL=>O+O2+ANY_NEUTRAL      
+502 O^-+NO^++ANY_NEUTRAL=>O+NO+ANY_NEUTRAL      
+503 O2^-+N^++ANY_NEUTRAL=>O2+N+ANY_NEUTRAL      
+504 O2^-+N2^++ANY_NEUTRAL=>O2+N2+ANY_NEUTRAL    
+505 O2^-+O^++ANY_NEUTRAL=>O2+O+ANY_NEUTRAL      
+506 O2^-+O2^++ANY_NEUTRAL=>O2+O2+ANY_NEUTRAL    
+507 O2^-+NO^++ANY_NEUTRAL=>O2+NO+ANY_NEUTRAL    
+508 O^-+N^++ANY_NEUTRAL=>NO+ANY_NEUTRAL         
+509 O^-+O^++ANY_NEUTRAL=>O2+ANY_NEUTRAL         
+510 O^-+O2^++ANY_NEUTRAL=>O3+ANY_NEUTRAL        
+511 O^-+NO^++ANY_NEUTRAL=>NO2+ANY_NEUTRAL       
+512 O2^-+N^++ANY_NEUTRAL=>NO2+ANY_NEUTRAL       
+513 O2^-+NO^++ANY_NEUTRAL=>NO3+ANY_NEUTRAL      
+514 O3^-+N2^++ANY_NEUTRAL=>O3+N2+ANY_NEUTRAL    
+515 O3^-+O2^++ANY_NEUTRAL=>O3+O2+ANY_NEUTRAL    
+516 O3^-+NO^++ANY_NEUTRAL=>O3+NO+ANY_NEUTRAL    
+517 O3^-+NO2^++ANY_NEUTRAL=>O3+NO2+ANY_NEUTRAL  
+518 NO^-+N^++ANY_NEUTRAL=>NO+N+ANY_NEUTRAL      
+519 NO^-+N2^++ANY_NEUTRAL=>NO+N2+ANY_NEUTRAL    
+520 NO^-+O^++ANY_NEUTRAL=>NO+O+ANY_NEUTRAL      
+521 NO^-+O2^++ANY_NEUTRAL=>NO+O2+ANY_NEUTRAL    
+522 NO^-+NO^++ANY_NEUTRAL=>NO+NO+ANY_NEUTRAL    
+523 NO^-+N2O^++ANY_NEUTRAL=>NO+N2O+ANY_NEUTRAL  
+524 NO^-+NO2^++ANY_NEUTRAL=>NO+NO2+ANY_NEUTRAL  
+525 N2O^-+O2^++ANY_NEUTRAL=>N2O+O2+ANY_NEUTRAL  
+526 N2O^-+NO^++ANY_NEUTRAL=>N2O+NO+ANY_NEUTRAL  
+527 N2O^-+NO2^++ANY_NEUTRAL=>N2O+NO2+ANY_NEUTRAL
+528 NO2^-+N^++ANY_NEUTRAL=>NO2+N+ANY_NEUTRAL    
+529 NO2^-+N2^++ANY_NEUTRAL=>NO2+N2+ANY_NEUTRAL  
+530 NO2^-+O^++ANY_NEUTRAL=>NO2+O+ANY_NEUTRAL    
+531 NO2^-+O2^++ANY_NEUTRAL=>NO2+O2+ANY_NEUTRAL  
+532 NO2^-+NO^++ANY_NEUTRAL=>NO2+NO+ANY_NEUTRAL  
+533 NO2^-+N2O^++ANY_NEUTRAL=>NO2+N2O+ANY_NEUTRAL
+534 NO2^-+NO2^++ANY_NEUTRAL=>NO2+NO2+ANY_NEUTRAL
+535 NO3^-+N2^++ANY_NEUTRAL=>NO3+N2+ANY_NEUTRAL  
+536 NO3^-+O^++ANY_NEUTRAL=>NO3+O+ANY_NEUTRAL    
+537 NO3^-+O2^++ANY_NEUTRAL=>NO3+O2+ANY_NEUTRAL  
+538 NO3^-+NO^++ANY_NEUTRAL=>NO3+NO+ANY_NEUTRAL  
+539 NO3^-+N2O^++ANY_NEUTRAL=>NO3+N2O+ANY_NEUTRAL
+540 NO3^-+NO2^++ANY_NEUTRAL=>NO3+NO2+ANY_NEUTRAL

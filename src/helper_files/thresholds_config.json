@@ -1,0 +1,87 @@
+{
+  "vibrational excitation / de-exitation by electron impact[BOLSIG+]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "vibrational-translational relaxation [Capitelli2000,page105]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "excitation of electronic levels by electron impact [Bolsig+]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "de-excitation of electronic levels by electron impact [Bolsig+]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "ionization by electron impact [Bolsig+]": {
+    "initial": 1e-3,
+    "step": 1e-2
+  },
+  "electron-ion recombination [Capitelli2000, page 141]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "electron attachment": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "electron detachment [Capitelli2000, page 182]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  " Detachment for O3^- NO^- N2O^- NO2^- NO3^- has to be verified":{
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "optical transitions and predissociation [Capitelli2000, page 157]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "quenching and excitation of N2 [Capitelli2000, page 159]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "deactivation of N metastables [Capitelli2000, page 161]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "quenching and excitation of O2 [Capitelli2000, page 160]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "deactivation of O metastables [Capitelli2000, page 161]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "bimolecular nitrogen-oxygen reactions [Capitelli2000, page 168]": {
+    "initial": 1e-3,
+    "step": 1e-3
+  },
+  "dissociation of nitrogen-oxygen molecules [Capitelli2000, page 169]": {
+    "initial": 1e-3,
+    "step": 1e-4
+  },
+  "recombination of nitrogen-oxygen molecules [Capitelli2000, page 170]": {
+    "initial": 1e-3,
+    "step": 1e-4
+  },
+  "positive ion reactions [Capitelli2000, page 179]": {
+    "initial": 1e-3,
+    "step": 1e-4
+  },
+  "negative ion reactions [Capitelli2000, pages 182-183]": {
+      "initial": 1e-3,
+      "step": 1e-4
+  },
+  "ion-ion recombination [Kossyi1992]": {
+      "initial": 1e-3,
+      "step": 1e-4
+  },
+  "Three-body recombination of O3^- NO^- N2O^- NO2^- NO3^- has to be verified": {
+      "initial": 1e-3,
+      "step": 1e-4
+  }
+}
+  

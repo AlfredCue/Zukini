@@ -1,0 +1,5 @@
+de-NOx efficiency : 0.220392
+Initial NO density: 1.95710e+16  [cm-3]
+Final   NO density: 1.20490e+16
+Final  NO2 density: 3.20870e+15
+Switch-period Ts  : 1.25e-05 s

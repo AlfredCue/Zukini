@@ -1,0 +1,23 @@
+{
+  "vibrational excitation / de-exitation by electron impact[BOLSIG+]": 4.337338269572891,
+  "vibrational-translational relaxation [Capitelli2000,page105]": 4.337338269572891,
+  "excitation of electronic levels by electron impact [Bolsig+]": 4.337338269572891,
+  "de-excitation of electronic levels by electron impact [Bolsig+]": 4.337338269572891,
+  "ionization by electron impact [Bolsig+]": 43.364382695728914,
+  "electron-ion recombination [Capitelli2000, page 141]": 4.337338269572891,
+  "electron attachment": 4.337338269572891,
+  "electron detachment [Capitelli2000, page 182]": 4.337338269572891,
+  " Detachment for O3^- NO^- N2O^- NO2^- NO3^- has to be verified": 4.337338269572891,
+  "optical transitions and predissociation [Capitelli2000, page 157]": 4.337338269572891,
+  "quenching and excitation of N2 [Capitelli2000, page 159]": 4.337338269572891,
+  "deactivation of N metastables [Capitelli2000, page 161]": 4.337338269572891,
+  "quenching and excitation of O2 [Capitelli2000, page 160]": 4.337338269572891,
+  "deactivation of O metastables [Capitelli2000, page 161]": 4.337338269572891,
+  "bimolecular nitrogen-oxygen reactions [Capitelli2000, page 168]": 4.337338269572891,
+  "dissociation of nitrogen-oxygen molecules [Capitelli2000, page 169]": 0.43463382695728914,
+  "recombination of nitrogen-oxygen molecules [Capitelli2000, page 170]": 0.43463382695728914,
+  "positive ion reactions [Capitelli2000, page 179]": 0.43463382695728914,
+  "negative ion reactions [Capitelli2000, pages 182-183]": 0.43463382695728914,
+  "ion-ion recombination [Kossyi1992]": 0.43463382695728914,
+  "Three-body recombination of O3^- NO^- N2O^- NO2^- NO3^- has to be verified": 0.43463382695728914
+}
