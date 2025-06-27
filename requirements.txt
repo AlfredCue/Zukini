@@ -1,0 +1,4 @@
+# Core scientific libraries
+numpy
+pandas
+matplotlib
