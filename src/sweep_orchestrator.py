@@ -112,7 +112,7 @@ def run_simulation_pipeline(duty_cycle: float, ts: float, qt_output_dir: Path, e
     #----------------------------------------------------------------------------------------------
     #This is the location of the matlab executable, it has to be ajusted according to the users computer, it doesn't fetch for it 
     #automatically
-    generator = PowerInputGenerator(matlab_path="C:/Program Files/MATLAB/R2025a/bin/matlab.exe")
+    generator = PowerInputGenerator(matlab_path="C:/Program Files/MATLAB/R2025a/bin/matlab")
     #----------------------------------------------------------------------------------------------
     power_dir = generator.run(duty_cycle)
     run_info_path = power_dir / "run_info.txt"

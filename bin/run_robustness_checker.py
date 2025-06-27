@@ -90,7 +90,7 @@ def run_parametric_study():
     """
     runner = ZDPlasKinRunner(compiler="gfortran")
     analyzer = ZDPlasKinAnalyzer()
-    power_generator = PowerInputGenerator()
+    power_generator = PowerInputGenerator(matlab_path="C:/Program Files/MATLAB/R2024a/bin/matlab")
 
     for temp, gas, duty in itertools.product(TEMP_VALUES, GAS_VALUES, DUTY_VALUES):
         try:
@@ -138,7 +138,7 @@ def run_parametric_study():
                     )
 
                     # Save results
-                    if (img_dir := Path("Images")).exists():
+                    if (img_dir := PROJECT_ROOT / "images").exists():
                         shutil.copytree(img_dir, result_path, dirs_exist_ok=True)
                     LOGGER.info("Trust score for %s: %.2f", label, score)
 
