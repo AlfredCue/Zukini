@@ -217,7 +217,7 @@ Structured under `/robustness_analysis_results/`, includes:
 
 ## 🧠 Credits
 
-Developed by Alfredo Cuellar Valencia during internship in LAPLACE Laboratory under the tutoring of Engineer Hubert Piquet 
+Developed by Alfredo Cuellar Valencia during internship in LAPLACE Laboratory under the tutoring of Professor Hubert Piquet and Doctor Nicolas Bente
 
 ---
 
