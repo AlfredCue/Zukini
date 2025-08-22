@@ -31,7 +31,7 @@ program DBD0D
 !
   real(8), parameter :: no_ppm = 800 ! Input NO concentration, [ppm]
   real(8), parameter :: o2_ppm = 25000 ! Input O2 concentration, [ppm]
-  real(8), parameter :: gas_temperature = 300 ! Gas temperature, [K]
+  real(8), parameter :: gas_temperature = 600 ! Gas temperature, [K]
   real(8), parameter :: gas_pression = 1 ! Gas pressure, [atm]
   
 ! Calcul of gas pressure
@@ -244,5 +244,5 @@ program DBD0D
   !write(*,*)' NO [ppm] : ',(no/neutrals_d)*1E6
   !write(*,*)' NO2 [ppm] : ',(no2/neutrals_d)*1E6
   !write(*,*)' deNOx efficiency : ',1-((((no/neutrals_d)*1E6)+((no2/neutrals_d)*1E6))/no_ppm)
-  !write(*,*)' NO2 selectivity : ',((no2/neutrals_d)*1E6)/no_ppm
+  write(*,*)'NO2 selectivity:',((no2/neutrals_d)*1E6)/no_ppm
 end program DBD0D

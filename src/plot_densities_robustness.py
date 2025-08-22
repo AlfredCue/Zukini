@@ -46,6 +46,13 @@ def extract_density(species: str, species_names: List[str], density_matrix: np.n
         raise ValueError(f"Species '{species}' not found in species list.") from exc
     return density_matrix[:, idx]
 
+def extract_last_value(species: str, species_names: List[str], density_matrix: np.ndarray) -> np.ndarray:
+    try:
+        idx = species_names.index(species)
+    except ValueError as exc:
+        raise ValueError(f"Species '{species}' not found in species list.") from exc
+    return density_matrix[-1, idx]
+
 # ----------------------------------------------------------------------
 # Metrics Calculations
 # ----------------------------------------------------------------------
@@ -125,7 +132,11 @@ class ZDPlasKinAnalyzer:
     def analyze(self, qt_full: Path, qt_reduced: Path,
                 priority_species: List[str],
                 sim_time_reduced: float,
-                sim_time_full: float) -> float:
+                sim_time_full: float,
+                selectivity_full: float,
+                selectivity_reduced: float,
+                o3_full: float,
+                o3_reduced: float) -> float:
         """
         Compare full and reduced Qt outputs and compute global trust metric.
 
@@ -200,8 +211,10 @@ class ZDPlasKinAnalyzer:
             f.write(f"Overall Trust Score:          {overall:.2f} %\n\n")
             f.write(f"Simulation Time (s) full:     {sim_time_full:.3f}\n")
             f.write(f"Simulation Time (s) reduced:  {sim_time_reduced:.3f}\n")
-        
-
+            f.write(f"Selectivity full:             {selectivity_full:.4f}\n")
+            f.write(f"Selectivity reduced:          {selectivity_reduced:.4f}\n")
+            f.write(f"Final O3 full:                {o3_full:.10f}\n")
+            f.write(f"Final O3 reduced:             {o3_reduced:.10f}\n")
         return overall
 
     def plot_single_species(self, species: str, qt_full: Path, qt_reduced: Path) -> None:

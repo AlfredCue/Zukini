@@ -32,7 +32,7 @@ function main(D, outdir)
     % ------------------- Continuous-mode settings --------------------
     Non  = 1;      % one on-pulse per period
     Noff = 0;      % no off pulses (burst disabled)
-    t_total = 0.180; %Total simulation time
+    t_total = 0.180; %Total simulation time 0.180
     k    = floor(t_total/Ts);  %Number of periods simulated    
 
     % Put everything into base workspace for Simulink model

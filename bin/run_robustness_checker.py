@@ -19,6 +19,7 @@ import itertools
 import json
 import logging
 import shutil
+import time
 from pathlib import Path
 from datetime import datetime
 
@@ -28,7 +29,11 @@ from src.single_run_module import ZDPlasKinRunner
 from src.plot_densities_robustness import ZDPlasKinAnalyzer
 from src.power_input_generator import PowerInputGenerator
 from src.brute_force_recovery import extract_simulation_time
+from src.brute_force_recovery import extract_selectivity
 from src.robustness_analysis_module import RobustnessResultsAggregator
+from bin.run_optizd import clear_qt_directories
+from src.plot_densities_robustness import extract_last_value, load_species_names, load_densities
+
 
 # ----------------------------------------------------------------------
 # Logging Setup
@@ -49,12 +54,11 @@ LOGGER = logging.getLogger(__name__)
 # ----------------------------------------------------------------------
 
 #This values can be changed in case certain conditions want to be checked
-TEMP_VALUES = [300, 400, 500]
-DUTY_VALUES = [0.1, 0.5, 0.9]
+TEMP_VALUES = [300,350,400,450,500,550,600]
+DUTY_VALUES = [0.5]
 GAS_VALUES = [
-    {"NO": 800, "O2": 25000},
-    {"NO": 900, "O2": 30000},
-    {"NO": 1000, "O2": 35000},
+    {"NO": 800, "O2": 0},
+    {"NO": 800, "O2": 25000}
 ]
 KINETIC_SETS = [
     (PROJECT_ROOT / "data/Reduced_Sets/kinet_original.inp", "original"),
@@ -90,7 +94,13 @@ def run_parametric_study():
     """
     runner = ZDPlasKinRunner(compiler="gfortran")
     analyzer = ZDPlasKinAnalyzer()
-    power_generator = PowerInputGenerator(matlab_path="C:/Program Files/MATLAB/R2024a/bin/matlab")
+    power_generator = PowerInputGenerator(matlab_path="C:/Program Files/MATLAB/R2025a/bin/matlab")
+
+    qt_dirs = [
+        PROJECT_ROOT / "Data/QtFiles/Qt_1",
+        PROJECT_ROOT / "Data/QtFiles/Qt_2"
+    ]
+    clear_qt_directories(qt_dirs)
 
     for temp, gas, duty in itertools.product(TEMP_VALUES, GAS_VALUES, DUTY_VALUES):
         try:
@@ -112,38 +122,48 @@ def run_parametric_study():
 
             # Generate and copy power input
             generated_path = power_generator.run(duty_cycle=duty)
-            shutil.move(str(generated_path), ZDPLASKIN_DIR / "data_in.dat")
+            data_in_path = ZDPLASKIN_DIR / "data_in.dat"
+            if data_in_path.exists():
+                data_in_path.unlink()
+            shutil.move(generated_path / "data_in.dat", ZDPLASKIN_DIR)
 
+            if QT1_DIR.exists():
+                shutil.rmtree(QT1_DIR)
             # Loop over kinetic sets
             for kinetic_file, label in KINETIC_SETS:
                 shutil.copyfile(kinetic_file, ZDPLASKIN_DIR / "kinet.inp")
                 runner.run()
-
                 if label == "original":
-                    # Move Qt_2 to Qt_1 as reference
-                    if QT1_DIR.exists():
-                        shutil.rmtree(QT1_DIR)
-                    shutil.move(str(QT2_DIR), str(QT1_DIR))
+                    t_full, dens_full = load_densities(QT1_DIR / "qt_densities.txt")
+                    species_names = load_species_names(QT1_DIR / "qt_species_list.txt")
                     sim_time_full = extract_simulation_time(PROJECT_ROOT / "resources/ZDPlaskin/simulation_output.txt")
+                    selectivity_full = extract_selectivity(PROJECT_ROOT / "resources/ZDPlaskin/simulation_output.txt")
+                    o3_full = extract_last_value("O3",species_names=species_names,density_matrix=dens_full)
                 else:
+                    t_red, dens_red = load_densities(QT2_DIR / "qt_densities.txt")
                     sim_time_reduced = extract_simulation_time(PROJECT_ROOT / "resources/ZDPlaskin/simulation_output.txt")
+                    selectivity_reduced = extract_selectivity(PROJECT_ROOT / "resources/ZDPlaskin/simulation_output.txt")
+                    o3_reduced = extract_last_value("O3",species_names=species_names,density_matrix=dens_red)
                     result_path = output_base / label
 
                     score = analyzer.analyze(
-                        qt1_dir= QT1_DIR,
-                        qt2_dir= QT2_DIR,
+                        qt_full= QT1_DIR,
+                        qt_reduced= QT2_DIR,
                         priority_species=["NO", "NO2"],
                         sim_time_full=sim_time_full,
-                        sim_time_reduced=sim_time_reduced
+                        sim_time_reduced=sim_time_reduced,
+                        selectivity_full=selectivity_full,
+                        selectivity_reduced=selectivity_reduced,
+                        o3_full=o3_full,
+                        o3_reduced=o3_reduced
                     )
-                    
+
 
                     # Save results
                     if (img_dir := PROJECT_ROOT / "images").exists():
                         shutil.copytree(img_dir, result_path, dirs_exist_ok=True)
                         shutil.move(RESULTS_DIR / "metrics_summary.txt", RESULTS_DIR / config_name / label)
                     LOGGER.info("Trust score for %s: %.2f", label, score)
-
         except Exception as e:
             LOGGER.error("Failed configuration %s due to: %s", config_name, str(e), exc_info=True)
 

@@ -1,6 +1,6 @@
-interest 			= 28
-t_init 				= 2.7043e-06
-t_end 				= 0.02
+interest 			= 25
+t_init 				= 4.8677e-06
+t_end 				= 1.799876E-01
 max_bp 				= 0
 tau_lifetime 		= 0.9e-4
 max_path 			= 500

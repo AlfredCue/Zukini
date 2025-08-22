@@ -1,22 +1,22 @@
 ﻿
  DBD0D TEST CASE
  NO Concentration :    800.00000000000000      [ppm]
- NO Initial density :    19571137961002380.      [cm-3]
- N2 Initial density :    2.3832753252010648E+019 [cm-3]
- found 76820 points in data_in.dat file
+ NO Initial density :    9785568980501190.0      [cm-3]
+ N2 Initial density :    1.1916376626005324E+019 [cm-3]
+ found 691182 points in data_in.dat file
 
 ZDPlasKin (version 2.0a) INIT:
   species        ... 53
-  reactions      ... 537
+  reactions      ... 246
   BOLSIG+ loader ... bolsigdb.dat : 21 species & 88 collisions
   species  link  ... 21
-  process  link  ... 57
+  process  link  ... 30
 ZDPlasKin INFO: reset data and configuration
 ZDPlasKin INFO: set accuracy 1.00D-10 (absolute) & 1.00D-05 (relative)
 ZDPlasKin INIT DONE
 
- Initial gas density :    2.4463922451252974E+019 [cm-3]
- Initial elec reduced mobility :    3.8161292714306345E+023
+ Initial gas density :    1.2231961225626487E+019 [cm-3]
+ Initial elec reduced mobility :    2.2407751537417731E+023
  ==========            1 /           1  ==========
  Progression :           0 %
  Progression :           0 %
@@ -103,3 +103,23 @@ ZDPlasKin INIT DONE
  Progression :          81 %
  Progression :          82 %
  Progression :          83 %
+ Progression :          84 %
+ Progression :          85 %
+ Progression :          86 %
+ Progression :          87 %
+ Progression :          88 %
+ Progression :          89 %
+ Progression :          90 %
+ Progression :          91 %
+ Progression :          92 %
+ Progression :          93 %
+ Progression :          94 %
+ Progression :          95 %
+ Progression :          96 %
+ Progression :          97 %
+ Progression :          98 %
+ Progression :          99 %
+ Progression :         100 %
+ #SIMULATION ENDED
+ Simulation time:   49.796875000000000      s
+ NO2 selectivity:   9.0920533892066297E-003

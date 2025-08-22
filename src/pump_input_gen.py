@@ -56,8 +56,8 @@ def create_pumpkin_input_file(tag: str, species_name: str, output_dir: str = "pu
 
     input_template = (
         "interest \t\t\t= {interest}\n"
-        "t_init \t\t\t\t= 2.7043e-06\n"
-        "t_end \t\t\t\t= 0.02\n"
+        "t_init \t\t\t\t= 4.8677e-06\n"
+        "t_end \t\t\t\t= 1.799876E-01\n"
         "max_bp \t\t\t\t= 0\n"
         "tau_lifetime \t\t= 0.9e-4\n"
         "max_path \t\t\t= 500\n"

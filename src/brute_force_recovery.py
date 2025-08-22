@@ -26,6 +26,11 @@ _SIM_TIME_RE = re.compile(
     re.I  # case-insensitive
 )
 
+_SENS_RE = re.compile(
+    r"NO2\s*selectivity\s*:?\s*([0-9.+\-eE]+)",
+    re.I
+)
+
 #-----------------------------------------------------------------------
 # Logging setup
 #-----------------------------------------------------------------------
@@ -70,6 +75,25 @@ def extract_simulation_time(log_path: Union[str,Path]) -> Optional[float]:
 
     LOGGER.error("Simulation time not found in log.")
     return None
+
+def extract_selectivity(log_path: Union[str,Path])-> Optional[float]:
+    log_path = Path(log_path)
+    if not log_path.exists():
+        LOGGER.error(f"File not found: {log_path}")
+        return None
+    with log_path.open("r", encoding="utf-8", errors="ignore") as fh:
+        for line in fh:
+            match = _SENS_RE.search(line)
+            if match:
+                try:
+                    return float(match.group(1))
+                except ValueError as exc:
+                    LOGGER.error(f"Could not parse '{match.group(1)}' as float: {exc}")
+                    return None
+
+    LOGGER.error("NO2 Selectivity not found in log.")
+    return None
+
 
 # ----------------------------------------------------------------------
 # Parse Discarded Reactions

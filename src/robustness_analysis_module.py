@@ -134,7 +134,9 @@ class RobustnessResultsAggregator:
         )
 
         out_csv.parent.mkdir(parents=True, exist_ok=True)
-        df.to_csv(out_csv, index=False)
+        df["o3_full"] = df["o3_full"].apply(lambda x: f"'{x}" if x > 1e12 else x)
+        df["o3_reduced"] = df["o3_reduced"].apply(lambda x: f"'{x}" if x > 1e12 else x)
+        df.to_csv(out_csv, index=False,float_format="%.6f")
         LOGGER.info("Compiled %d rows → %s", len(df), out_csv.resolve())
         return df
 
@@ -153,6 +155,10 @@ class RobustnessResultsAggregator:
             "trust_score": None,
             "sim_time_full": None,
             "sim_time_red": None,
+            "selectivity_full": None,
+            "selectivity_reduced": None,
+            "o3_full": None,
+            "o3_reduced": None
         }
 
         with path.open("r", encoding="utf-8") as fh:
@@ -169,7 +175,14 @@ class RobustnessResultsAggregator:
                     vals["sim_time_full"] = self._extract_number(line)
                 elif "Simulation Time (s) reduced" in line:
                     vals["sim_time_red"] = self._extract_number(line)
-
+                elif "Selectivity full" in line:
+                    vals["selectivity_full"] = self._extract_number(line)
+                elif "Selectivity reduced" in line:
+                    vals["selectivity_reduced"] = self._extract_number(line)
+                elif "Final O3 full" in line:
+                    vals["o3_full"] = self._extract_number(line)
+                elif "Final O3 reduced" in line:
+                    vals["o3_reduced"] = self._extract_number(line)
         return vals
 
 

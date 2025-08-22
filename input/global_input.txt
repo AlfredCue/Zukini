@@ -2,5 +2,5 @@
 GLOBAL INITIAL INPUT
 ######################
 
-interest: NO,NO2,O2
+interest: NO,NO2,O2,O3
 max_acum_erro: 5

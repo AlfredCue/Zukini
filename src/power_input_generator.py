@@ -50,9 +50,8 @@ class PowerInputGenerator:
         PROJECT_ROOT = Path(__file__).resolve().parents[1]
         self.matlab_main_fn = matlab_main_fn
         self.matlab_script_dir = PROJECT_ROOT / "src/matlab_power_generator"
-        self.output_dir = PROJECT_ROOT / "temp/power_info"
+        self.output_dir = PROJECT_ROOT / "data/temp/power_info"
         self.matlab_path = matlab_path
-        self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def run(self, duty_cycle: float) -> Path:
         """
